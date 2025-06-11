@@ -1,0 +1,99 @@
+body {
+  font-family: 'Cherry Swash', 'Quicksand', cursive;
+  background: linear-gradient(135deg, #e0fff4 0%, #f0fdfa 100%);
+  color: #355c4b;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+ background: #48bfa0;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  background-color: #5dd2b4;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin: 0 0.4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #48bfa0;
+}
+
+.hero, .content, .projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+section::before {
+  content: "🌱 🐢 🍃";
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-card {
+  background: #d9fff3;
+  border: 2px dashed #5dd2b4;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(93, 210, 180, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+footer {
+  background: #b4f2e1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #355c4b;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #14443c;
+  background-color: #d2f8ec;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: #48bfa0;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(72, 191, 160, 0.4);
+}
+
+.project-card a::after {
+  content: '';
+  margin-left: 0.4rem;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.project-card a:hover::after {
+  content: ' 🌐';
+  opacity: 1;
+}
