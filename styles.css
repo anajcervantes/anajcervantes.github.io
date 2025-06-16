@@ -1,5 +1,5 @@
 body {
-  font-family: 'Cherry Swash', 'Quicksand', cursive;
+  font-family: 'Comfortaa', 'Nunito', sans-serif;
   background: linear-gradient(135deg, #e0fff4 0%, #f0fdfa 100%);
   color: #355c4b;
   margin: 0;
@@ -14,20 +14,29 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-nav a {
-  background-color: #5dd2b4;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  margin: 0 0.4rem;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: background 0.3s;
+.nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #48bfa0;
 }
 
-nav a:hover {
-  background-color: #48bfa0;
+.nav-wrapper a {
+  background-color: #6ee7c8;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  color: #14443c;
+  font-weight: bold;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-wrapper a:hover {
+  background-color: #34c6a3;
+  color: white;
 }
 
 .hero, .content, .projects {
